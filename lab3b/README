@@ -1,0 +1,15 @@
+NAME: Devam Shroff,Nikhil Srikumar
+EMAIL: dev.shroff12@gmail.com,nsrikumar1@gmail.com
+ID: 504923307,405000941
+
+Submission Files:
+
+lab3b.py: python source file that accepts a CSV file as an argument and checks for errors according to the EXT2 file system.
+
+Makefile:
+    To build and clean the project.
+
+Tarball:
+    Submission tarball.
+
+

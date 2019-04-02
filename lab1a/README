@@ -1,0 +1,32 @@
+/*
+NAME: Devam Shroff
+EMAIL: dev.shroff12@gmail.com
+ID: 504923307
+*/
+
+File Implemented: simpsh.c
+
+This is the first of a 3-part implementation of simpsh.c that supports the
+following features:
+	  --rdonly: through which read-only files are opened and saved
+	  	    for future use by --command.
+		    
+ 	  --wronly: through which write-only files are opened and saved
+	  	    for future use by --command
+
+    limitation for both rdonly and wronly: inability to remove a file
+    	       from the list of file descriptors after it has been added.
+	       
+	  --command:
+		limitation:
+			-unable to wait until a command finishes
+			-unable to support piping where the result of one
+			command is "piped" into another 
+		
+	  --verbose: just outputs all options and arguments that come after it
+	  	     limitation: unable to turn verbose off so that some of the
+		     options aren't printed
+		
+  I think a useful option to add would be one that returns a list of all the
+  currently open file descriptors for viewing and adding options that support
+  the manipulation of the fd_array

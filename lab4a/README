@@ -1,0 +1,20 @@
+NAME: Devam Shroff
+EMAIL: dev.shroff12@gmail.com
+ID: 504923307
+
+BeagleBone S.N.: BBGW17080025
+MAC Address: 2CF7F1066919
+
+
+my_beaglebone.jpg : 
+    Selfie of me with my beaglebone
+git.png :
+    Screenshot of installing git onto beaglebone and cloning a repo
+build_run.png :
+    Screenshot of building and running helloworld program on beaglebone
+connected.png :
+    Screenshot of WIFI SSH session (installing git and cloning a repository)
+copy.png :
+    Screenshot of copying the helloworld program to the Beaglebone
+Makefile:
+    To generate the tarball

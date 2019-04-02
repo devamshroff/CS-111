@@ -1,0 +1,30 @@
+NAME: Devam Shroff
+UID: 504923307
+EMAIL: dev.shroff12@gmail.com
+
+lab0.c: This C source program accepts 4 optional arguments. It takes the contents of "input" (stdin) and copies it into "output" (stdout) with the help of file descriptors. 4 arguments:
+
+	--input=filename -> use filename as standard input
+	--output=filename -> use filename as standard output (creates new file if it doesn't exist).
+	--segfault -> forces a segmentation fault
+	--catch -> creates a SIGSEGV handler to catch any segmentation faults
+	--coredump -> dumps core on segmentation fault
+
+Makefile: Contains the following targets
+	  default: takes lab0.c and builds the executable with special flags.
+	  check: runs a smoke test on the executable
+	  	 exitTest: tests for the correct error code upon a successful exit of the program. Input file created and correctly specified.
+		 argTest: tests for the correct error code upon the input of an incorrect argument.
+		 equalityTest: tests for equality between input and output file upon being given correct input and output arguments.
+		 segTest: tests for a segmentation fault upon being given the --segfault option
+		 existTest: tests for the correct error code upon being given a specified input file that does not exist.
+
+	  dist: creates the distribution tarball with relevant files.
+
+backtrace.png: A screenshot inside gdb of the segmentation fault and stacktrace.
+
+breakpoint.png: A screenshot inside gdb taken right at the segmentation fault and variable inspection.
+
+
+	
+	

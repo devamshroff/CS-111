@@ -1,0 +1,29 @@
+NAME: Devam Shroff
+EMAIL: dev.shroff12@gmail.com
+ID: 504923307
+
+Features Implemented:
+
+Flags: These alter the opening of files.
+       append	   creat       cloexec	directory	dsync	excl
+       nofollow	   nonblock    rsync	sync		trunc
+
+File Opening Options:
+     rdwr - read and write
+     pipe - I/O redirection
+
+Miscellaneous:
+	close	catch	ignore	deafult	
+	abort	pause	wait
+
+Known limitations:
+      The code is fully functional as per the spec provided to us. Certain limitations of what we were
+      required to implement include the ability for the user to open multiple files at once, close all
+      files at once. Another nice feature to have might be to allow the user to specify which
+      processes to wait for - so that user has complete control over the system. We should also
+      implement all possible file flags and allow the user to set the number of upcoming signals
+      to ignore.
+
+
+
+	

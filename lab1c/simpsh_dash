@@ -1,0 +1,26 @@
+#!/bin/sh
+
+echo "=======benchmark 1=======" \
+
+cat pg98_100.txt | \
+sort | \
+head 10 > outb1.txt 2>errb1.txt \
+
+times \ 
+
+echo "=======benchmark 2=======" \ 
+
+tac pg98_100.txt | \
+sort | \
+tr A-Z a-z > outb1.txt 2>errb1.txt \
+
+times \
+
+echo "=======benchmark 3=======" \
+
+cat pg98_100.txt | \
+sort | \
+uniq > outb1.txt 2>errb1.txt \
+
+times \
+

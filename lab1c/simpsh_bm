@@ -1,0 +1,24 @@
+
+echo "========== \n"\
+echo "benchmark 1"\
+
+./simpsh --profile --rdonly pg98_100.txt \
+--pipe --pipe --wronly outb1.txt --wronly errb1.txt \
+--command 3 5 6 head 10 --command 0 2 6 cat --command 1 4 6 sort \
+--close 1 --close 2 --close 3 --close 4 --wait \
+
+echo "========== \n " \
+echo "benchmark 2" \
+
+./simpsh --profile --rdonly pg98_100.txt \
+--pipe --pipe --wronly outb1.txt --wronly errb1.txt \
+--command 3 5 6 tr A-Z a-z --command 0 2 6 tac --command 1 4 6 sort \
+--close 1 --close 2 --close 3 --close 4 --wait \
+
+echo "========== \n"\
+echo "benchmark 3"\
+
+./simpsh --profile --rdonly pg98_100.txt \
+--pipe --pipe --wronly outb1.txt --wronly errb1.txt \
+--command 3 5 6 uniq --command 0 2 6 cat --command 1 4 6 sort \
+--close 1 --close 2 --close 3 --close 4 --wait \
